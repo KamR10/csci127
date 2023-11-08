@@ -1,1 +1,5 @@
 import pandas as pd
+csvFile = input("Enter name of csvfile: ")
+data = pd.read_csv(csvFile)
+factor = "CONTRIBUTING FACTOR VEHICLE 1"
+print(data[factor].value_counts()[:3])
